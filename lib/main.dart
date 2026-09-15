@@ -245,7 +245,8 @@ class _ConverterPageState extends State<ConverterPage> {
   );
 
   Widget _unitMenu(String label, TemperatureUnit value, ValueChanged<TemperatureUnit?> onChanged) => DropdownButtonFormField<TemperatureUnit>(
-    value: value,
+    key: ValueKey('$label-$value'),
+    initialValue: value,
     isExpanded: true,
     decoration: InputDecoration(labelText: label, border: const OutlineInputBorder(borderRadius: BorderRadius.all(Radius.circular(14)))),
     items: TemperatureUnit.values.map((unit) => DropdownMenuItem(value: unit, child: Text(unit.label))).toList(),
