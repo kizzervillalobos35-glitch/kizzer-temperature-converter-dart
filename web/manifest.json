@@ -1,0 +1,9 @@
+{
+  "name": "Kizzer Temperature Converter",
+  "short_name": "Kizzer",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#f4efe5",
+  "theme_color": "#22634c",
+  "description": "A Flutter and Dart temperature converter."
+}
